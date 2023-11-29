@@ -13,12 +13,15 @@ class LoginPageState extends ChangeNotifier {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
   TextEditingController usernameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-
+  late AuthedUser authedUser;
   final _authService = AuthService();
   String? username;
   String? password;
 
-  LoginPageState(this.context) {}
+  LoginPageState(this.context) {
+    // Initialize the AuthedUser in the constructor
+    authedUser = Provider.of<AuthedUser>(context, listen: false);
+  }
 
   String? validateIfEmpty(String? value) {
     if (value == null || value.isEmpty) {
@@ -45,6 +48,8 @@ class LoginPageState extends ChangeNotifier {
       ScaffoldMessenger.of(context).hideCurrentSnackBar();
 
       if (loginResponse != null) {
+        authedUser.setUserData(loginResponse['id'], loginResponse['token']);
+        log("${authedUser.token}");
         Navigator.of(context).push(
           MaterialPageRoute(
             builder: (context) => ChangeNotifierProvider(
