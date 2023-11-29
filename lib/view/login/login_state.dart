@@ -19,7 +19,7 @@ class LoginPageState extends ChangeNotifier {
   String? password;
 
   LoginPageState(this.context) {
-    // Initialize the AuthedUser in the constructor
+    // Initialize the UserProvider in the constructor
     authedUser = Provider.of<AuthedUser>(context, listen: false);
   }
 
