@@ -48,8 +48,10 @@ class LoginPageState extends ChangeNotifier {
       ScaffoldMessenger.of(context).hideCurrentSnackBar();
 
       if (loginResponse != null) {
-        authedUser.setUserData(loginResponse['id'], loginResponse['token']);
-        log("${authedUser.token}");
+        int id = loginResponse['id'];
+        String token = loginResponse['token'];
+        authedUser.setUserData(id, token);
+        log("[LOGINSTATE]${authedUser.token}");
         Navigator.of(context).push(
           MaterialPageRoute(
             builder: (context) => ChangeNotifierProvider(

@@ -17,8 +17,8 @@ class AuthedUser with ChangeNotifier {
   }
 
   void setUserData(int id, String token) {
-    id = id;
-    token = token;
+    this.id = id;
+    this.token = token;
     notifyListeners();
   }
 }
