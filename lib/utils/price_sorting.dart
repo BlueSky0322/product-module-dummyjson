@@ -1,0 +1,4 @@
+enum PriceSorting {
+  lowToHigh,
+  highToLow,
+}
