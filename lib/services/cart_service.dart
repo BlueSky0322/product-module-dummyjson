@@ -4,7 +4,6 @@ import 'dart:developer';
 import 'package:http/http.dart';
 import 'package:product_module/data/cart.dart';
 import 'package:product_module/utils/const.dart';
-import 'package:product_module/data/product.dart';
 
 class CartService {
   final client = Client();

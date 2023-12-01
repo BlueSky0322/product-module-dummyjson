@@ -6,7 +6,6 @@ import 'package:product_module/components/ui/add_to_cart_popup.dart';
 import 'package:product_module/view/cart/user_cart.dart';
 import 'package:product_module/view/cart/user_cart_state.dart';
 import 'package:product_module/view/product/product_details/product_details_state.dart';
-import 'package:product_module/view/product/product_state.dart';
 import 'package:provider/provider.dart';
 
 class ProductDetailsPage extends StatelessWidget {

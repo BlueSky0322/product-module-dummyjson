@@ -1,13 +1,6 @@
-import 'dart:developer';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:product_module/data/cart.dart';
-import 'package:product_module/data/product.dart';
-import 'package:product_module/view/product/product_details/product_details_page.dart';
-import 'package:product_module/view/product/product_details/product_details_state.dart';
-import 'package:provider/provider.dart';
 
 class CartListTile extends StatelessWidget {
   final CartProduct product;
