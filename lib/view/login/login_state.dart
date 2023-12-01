@@ -34,7 +34,7 @@ class LoginPageState extends ChangeNotifier {
     if (formKey.currentState!.validate()) {
       //show snackbar to indicate loading
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-        content: const Text('Processing Data'),
+        content: const Text('Logging in...'),
         backgroundColor: Colors.green.shade300,
       ));
 
@@ -63,7 +63,7 @@ class LoginPageState extends ChangeNotifier {
       } else {
         //if an error occurs, show snackbar with error message
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-          content: const Text('Invalid Credentials.'),
+          content: const Text('Invalid credentials.'),
           backgroundColor: Colors.red.shade300,
         ));
       }
