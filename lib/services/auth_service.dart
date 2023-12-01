@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:developer';
 
 import 'package:http/http.dart';
-import 'package:product_module/const.dart';
+import 'package:product_module/utils/const.dart';
 import 'package:product_module/data/user.dart';
 
 class AuthService {

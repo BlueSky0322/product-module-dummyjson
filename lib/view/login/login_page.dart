@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:product_module/components/custom_text_field.dart';
+import 'package:product_module/components/ui/custom_text_field.dart';
 import 'package:product_module/view/login/login_state.dart';
 import 'package:provider/provider.dart';
 
