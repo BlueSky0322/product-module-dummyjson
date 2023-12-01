@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:product_module/data/cart.dart';
 import 'package:product_module/data/user.dart';
 import 'package:product_module/view/login/login_page.dart';
 import 'package:product_module/view/login/login_state.dart';
+import 'package:product_module/view/product/product_state.dart';
 import 'package:provider/provider.dart';
 
 void main() {
