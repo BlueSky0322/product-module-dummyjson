@@ -2,7 +2,7 @@
 ![image](https://github.com/BlueSky0322/AuronexTechnicalAssessmentQuestion2-ProductModule/assets/60435524/86b4aa48-da3a-4aae-ba7a-8a94ab8c5a51)
 
 # Introduction
-A bare-bones product module for an e-commerce website (mobile version).
+A bare-bones product module for an e-commerce website using dummyjson (mobile version).
 # Features
 - User Login and Authorization
 - Product Listing Page
