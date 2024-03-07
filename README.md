@@ -1,5 +1,5 @@
 # Introduction
-A bare-bones product module for an e-commerce website using dummyjson (mobile version).
+A bare-bones product module for an e-commerce module application using dummyjson.
 # Features
 - User Login and Authorization
 - Product Listing Page
